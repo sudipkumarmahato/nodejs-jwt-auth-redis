@@ -1,3 +1,3 @@
-# This is Nodejs JWT Authentication Practice Project
+# This is Nodejs JWT Authentication Practice
 
 - Sudip Kumar Mahato
