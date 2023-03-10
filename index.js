@@ -9,6 +9,14 @@ const mongo = require("./helpers/mongoDB");
 mongo.connectDB();
 const { verifyAccessToken } = require("./helpers/generateToken");
 
+const client = require("./helpers/redis.js");
+console.log(client);
+client.set("Name", "Sudip Kumar Mahato");
+client.get("foo", (error, value) => {
+  if (error) console.log(error.message);
+  console.log(value);
+});
+
 const app = express();
 
 app.use(morgan("tiny"));
